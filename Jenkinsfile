@@ -2,15 +2,21 @@ pipeline{
   agent any
   stages{
     stage("one"){
+        steps{
     echo "this is the first stage"
+        }
     }
     
-    tage("two"){
+    stage("two"){
+        steps{
     echo "this is the second stage"
+        }
     }
     
-    tage("third"){
+    stage("third"){
+        steps{
     echo "this is the third stage"
+        }
     }
     
   }
